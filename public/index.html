@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaturalAds</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f2f2f2, #e6e6e6); /* Gray fading background for side columns */
+        }
+        .center-column {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #99ccff, #3366cc); /* Increased fading effect from light blue to dark blue */
+        }
+        h1 {
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>Welcome to NaturalAds</h1>
+            <p>NaturalAds reshapes the boundaries between content and advertising. Our platform utilizes advanced Language Models (LLMs) to integrate advertisements seamlessly into chatbot conversations and website content, creating a non-intrusive, engaging, and contextually relevant advertising experience.</p>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+            <h2>Who Uses NaturalAds?</h2>
+            <ul>
+                <li>Advertisers: Pay to have product and services mentioned organically in content and chatbot conversations.</li>
+                <li>Content Generation Sites: Newsites, blogs, and others monetize existing content. Existing articles are augmented on each user visit to mention products and services relevant to both the user and the article content.</li>
+                <li>Chatbot Sites: In the course of normal chatbot conversation, products and services are mentioned when the context and user desires are relevant.</li>
+                <li>Monetize Effortlessly: Offer websites and chatbot developers a new revenue stream without compromising on user experience and content quality.</li>
+            </ul>
+        </div>
+        <div class="center-column">
+            <!-- Middle column for the "NaturalAds" header -->
+            <h1>Welcome to NaturalAds</h1>
+        </div>
+        <div class="right-column">
+            <h2>Why NaturalAds?</h2>
+            <ul>
+                <li>Innovative Ad Placement: Meld advertisements naturally into conversations and textual content, without disrupting user engagement.</li>
+                <li>Contextually Relevant Ads: Employ LLMs to ensure advertisements are contextually apt and resonate with the user's current interactions.</li>
+                <li>Enhanced User Experience: Provide users with a seamless conversational and browsing experience, free from obtrusive ad interruptions.</li>
+                <li>Monetize Effortlessly: Offer websites and chatbot developers a new revenue stream without compromising on user experience and content quality.</li>
+            </ul>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            <h2>How It Works</h2>
+            <p>Advertisers: Choose your target audience, define your budget, and create your advertising message.</p>
+            <p>Integration & Verification: Our LLMs embed your ads subtly and appropriately into text and conversations on partner platforms. Content is verified for contextual and brand appropriateness.</p>
+            <p>Engage & Convert: Reach users organically as they interact with chatbots or browse websites, driving awareness and conversions.</p>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            <h2>Benefits</h2>
+            <ul>
+                <li>For Advertisers: Unlock a new, organic way to reach your audience, increasing ad relevance and engagement.</li>
+                <li>For Publishers: Offer a non-intrusive advertising medium, keeping user experience at the forefront while monetizing your platform.</li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
